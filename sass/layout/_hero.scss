@@ -1,0 +1,116 @@
+.hero-menu {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/mobil/m-imghero.jpg');
+  background-size: cover;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero-menu {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/mobil/m-imghero@2x.jpg');
+  }
+}
+
+@media (min-width: 489px) {
+  .hero-menu {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/tablet/t-imghero.jpg');
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero-menu {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/tablet/t-imghero@2x.jpg');
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-menu {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/dekstop/d-imghero.jpg');
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero-menu {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/dekstop/d-imghero@2x.jpg');
+    }
+  }
+}
+
+.hero-menu__title {
+  max-width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.61;
+  color: #ffffff;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-menu__title {
+    max-width: 360px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-menu__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+// .hero-menu__title {
+//   width: 696px;
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: #ffffff;
+//
+
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-bottom: 30px;
+// }
+
+.hero-menu__modal-button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #188ce8;
+
+  cursor: pointer;
+  border: 0px;
+  border-radius: 4px;
+
+  padding: 10px 32px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    outline: none;
+  }
+}

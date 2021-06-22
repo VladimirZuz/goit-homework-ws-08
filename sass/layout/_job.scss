@@ -1,0 +1,37 @@
+.job {
+  padding-bottom: 94px;
+}
+
+.job__job-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16x;
+  color: var(--title);
+  text-align: center;
+
+  margin-bottom: 50px;
+}
+
+.job__menu-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.job__div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.job__photo-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #ffffff;
+}
