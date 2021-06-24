@@ -115,3 +115,13 @@
 
   color: #757575;
 }
+
+.mob-menu__nav {
+  margin-bottom: 302px;
+}
+
+@media screen and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
+}
