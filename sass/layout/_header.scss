@@ -1,22 +1,18 @@
-.nav {
+.nav-div__nav {
   display: none;
 }
 
-.auth-nav {
+.auth-div-nav__item {
   display: none;
-}
-
-.page-header {
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
+// РАЗМЕР СМАРТФОН
 @media screen and (max-width: 767px) {
   .page-header {
     &__mob-menu-btm {
@@ -32,6 +28,15 @@
       fill: #212121;
     }
   }
+  .header-container {
+    height: 60px;
+    width: 100%;
+  }
+}
+
+.mob-menu__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .mob-menu__social-list {
@@ -39,27 +44,68 @@
   justify-content: space-between;
 }
 
+// РАЗМЕР ПЛАНШЕТ
 @media screen and (min-width: 768px) {
   .page-header {
     &__mob-menu-btm {
       display: none;
     }
   }
+  .nav-div__nav {
+    display: flex;
+    align-items: center;
+
+    &.nav-div__link.current {
+      color: var(--accent-color);
+    }
+  }
+  .auth-div-nav__item {
+    display: flex;
+    flex-direction: column;
+  }
+  .auth-div-nav__list {
+    margin: 5px 0 5px 0;
+  }
+  .auth-div-nav__tel-link {
+    margin-left: 0px;
+  }
+  .header-container {
+    height: 80px;
+    width: 100%;
+  }
+  .nav-div__link.current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+  }
+  .auth-div-nav__mail-link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+  .auth-div-nav__tel-link {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
-// .header-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-// }
+@media screen and (min-width: 1200px) {
+  .auth-div-nav__mail-link {
+    font-size: 14px;
+    line-height: 1.16;
+  }
+  .auth-div-nav__tel-link {
+    font-size: 14px;
+    line-height: 1.16;
+  }
+}
 
-// .page-header {
-//   padding-top: 25px;
-//   padding-bottom: 25px;
-//   border-bottom: 1px solid #ececec;
-// }
-
-.logo {
+.logo-div__logo {
   font-family: var(--logo-font);
   font-weight: 700;
   font-size: 26px;
@@ -67,27 +113,11 @@
   letter-spacing: 0.03em;
   color: var(--link-button);
 
-  margin-right: 93px;
+  // margin-right: 93px;
 }
 
-.logo__color {
+.logo-div__logo-color {
   color: #000000;
-}
-
-@media screen and (min-width: 767px) {
-  .nav {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-
-    &.nav__link.current {
-      color: var(--accent-color);
-    }
-  }
-  .auth-nav {
-    display: flex;
-    align-items: center;
-  }
 }
 
 .page-header__nav {
@@ -95,11 +125,11 @@
   align-items: center;
 }
 
-.nav__item:not(:last-child) {
+.nav-div__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.nav__link {
+.nav-div__link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.33;
@@ -116,22 +146,20 @@
   }
 }
 
-.nav__link.current::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-}
+// .nav-div__link.current::after {
+//   content: "";
+//   position: absolute;
+//   left: 0;
+//   bottom: -1px;
+//   display: block;
+//   width: 100%;
+//   height: 4px;
+//   border-radius: 2px;
+//   background-color: var(--accent-color);
+// }
 
-.auth-nav__mail-link {
+.auth-div-nav__mail-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--link-nav);
   display: flex;
@@ -153,13 +181,10 @@
   }
 }
 
-.auth-nav__tel-link {
+.auth-div-nav__tel-link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.33;
   letter-spacing: 0.02em;
   color: var(--link-nav);
-  margin-left: 40px;
   display: flex;
   align-items: center;
   transition-property: color;
@@ -179,35 +204,29 @@
   }
 }
 
-.auth-nav__mail-icon {
+.auth-div-nav__mail-icon {
   width: 16px;
   height: 12px;
   fill: #757575;
   margin-right: 10px;
   cursor: pointer;
 
-  .auth-nav__mail-link:hover &,
-  .auth-nav__mail-link:focus & {
+  .auth-div-nav__mail-link:hover &,
+  .auth-div-nav__mail-link:focus & {
     fill: currentColor;
     outline: none;
   }
 }
 
-.auth-nav__tel-icon {
+.auth-div-nav__tel-icon {
   width: 10px;
   height: 16px;
   fill: #757575;
   margin-right: 10px;
   cursor: pointer;
 
-  .auth-nav__tel-link:hover &,
-  .auth-nav__tel-link:focus & {
-    fill: currentColor;
-    outline: none;
-  }
-
-  .auth-nav__tel-link:hover &,
-  .auth-nav__tel-link:focus & {
+  .auth-div-nav__tel-link:hover &,
+  .auth-div-nav__tel-link:focus & {
     fill: currentColor;
     outline: none;
   }
