@@ -34,12 +34,6 @@
   }
 }
 
-@media screen and (max-width: 767px) {
-  .nav {
-    display: none;
-  }
-}
-
 .mob-menu__social-list {
   display: flex;
   justify-content: space-between;
@@ -80,13 +74,19 @@
   color: #000000;
 }
 
-.nav {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
+@media screen and (min-width: 767px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
 
-  &.nav__link.current {
-    color: var(--accent-color);
+    &.nav__link.current {
+      color: var(--accent-color);
+    }
+  }
+  .auth-nav {
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -126,11 +126,6 @@
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
-}
-
-.auth-nav {
-  display: flex;
-  align-items: center;
 }
 
 .auth-nav__mail-link {
