@@ -9,7 +9,9 @@
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  height: 60px;
+  width: 100%;
 }
 
 // РАЗМЕР СМАРТФОН
@@ -28,15 +30,6 @@
       fill: #212121;
     }
   }
-  .header-container {
-    height: 60px;
-    width: 100%;
-  }
-}
-
-.mob-menu__container {
-  display: flex;
-  justify-content: space-between;
 }
 
 .mob-menu__social-list {
@@ -54,7 +47,6 @@
   .nav-div__nav {
     display: flex;
     align-items: center;
-
     &.nav-div__link.current {
       color: var(--accent-color);
     }
@@ -73,17 +65,6 @@
     height: 80px;
     width: 100%;
   }
-  .nav-div__link.current::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 1px;
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    background-color: var(--accent-color);
-  }
   .auth-div-nav__mail-link {
     font-size: 12px;
     line-height: 1.16;
@@ -92,16 +73,36 @@
     font-size: 12px;
     line-height: 1.16;
   }
+  .logo-div {
+    margin-right: 88px;
+  }
 }
 
+// РАЗМЕР ПК
 @media screen and (min-width: 1200px) {
   .auth-div-nav__mail-link {
     font-size: 14px;
     line-height: 1.16;
+    margin-right: 30px;
   }
   .auth-div-nav__tel-link {
     font-size: 14px;
     line-height: 1.16;
+  }
+  .auth-div-nav__item {
+    display: flex;
+    flex-direction: row;
+  }
+  .header-container {
+    height: 80px;
+    width: 75%;
+  }
+  .nav-div__nav {
+    display: flex;
+    align-items: center;
+    &.nav-div__link.current {
+      color: var(--accent-color);
+    }
   }
 }
 
@@ -112,8 +113,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--link-button);
-
-  // margin-right: 93px;
 }
 
 .logo-div__logo-color {
@@ -146,17 +145,17 @@
   }
 }
 
-// .nav-div__link.current::after {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   bottom: -1px;
-//   display: block;
-//   width: 100%;
-//   height: 4px;
-//   border-radius: 2px;
-//   background-color: var(--accent-color);
-// }
+.nav-div__link.current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
 
 .auth-div-nav__mail-link {
   font-weight: 500;
