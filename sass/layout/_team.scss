@@ -54,16 +54,19 @@
 
 .team-social {
   display: flex;
-  justify-content: space-between;
-
+  // justify-content: space-between;
+  & :not(:last-child) {
+    margin-right: 10px;
+  }
   @media screen and (min-width: 480px) {
     justify-content: center;
+    & :not(:last-child) {
+      margin-right: 10px;
+    }
   }
-}
 
-@media screen and (min-width: 480px) {
-  .team-social__list-item:not(:last-child) {
-    margin-right: 10px;
+  @media screen and (max-width: 479px) {
+    justify-content: center;
   }
 }
 
