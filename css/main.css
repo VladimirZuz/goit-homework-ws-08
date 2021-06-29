@@ -417,7 +417,7 @@ body {
   width: 100%;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .page-header__mob-menu-btm {
     line-height: 0;
     background-color: transparent;
@@ -842,7 +842,20 @@ body {
 }
 
 .team-social {
+  display: flex;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 480px) {
+  .team-social {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .team-social__list-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .team-social__list-icon {
@@ -859,6 +872,7 @@ body {
 }
 
 .team-social__list-link {
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 44px;

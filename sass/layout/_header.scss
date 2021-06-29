@@ -14,8 +14,8 @@
   width: 100%;
 }
 
-// РАЗМЕР СМАРТФОН
-@media screen and (min-width: 480px) {
+// CСОКРЫТИЕ ИКОНКИ БУРГЕР
+@media screen and (max-width: 767px) {
   .page-header {
     &__mob-menu-btm {
       line-height: 0;

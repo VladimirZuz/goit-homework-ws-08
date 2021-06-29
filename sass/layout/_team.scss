@@ -2,11 +2,6 @@
   background: #f5f4fa;
 }
 
-.team-menu-img {
-  @media screen and (min-width: 480px) {
-    // width: 100%;
-  }
-}
 .team-card-content {
   background: #ffffff;
   padding: 30px 20px;
@@ -58,8 +53,18 @@
 }
 
 .team-social {
-  // display: flex;
+  display: flex;
   justify-content: space-between;
+
+  @media screen and (min-width: 480px) {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .team-social__list-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .team-social__list-icon {
@@ -76,7 +81,7 @@
 }
 
 .team-social__list-link {
-  // display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 
