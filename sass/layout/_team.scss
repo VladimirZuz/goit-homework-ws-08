@@ -2,6 +2,11 @@
   background: #f5f4fa;
 }
 
+.team-menu-img {
+  @media screen and (min-width: 480px) {
+    // width: 100%;
+  }
+}
 .team-card-content {
   background: #ffffff;
   padding: 30px 20px;
@@ -21,14 +26,14 @@
 }
 
 .team-menu-list {
-  display: flex;
+  // display: flex;
   text-align: center;
   margin-left: -30px;
   margin-top: -30px;
 }
 
 .team-menu-item {
-  flex-basis: calc((100% - 120px) / 4);
+  // flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -53,7 +58,7 @@
 }
 
 .team-social {
-  display: flex;
+  // display: flex;
   justify-content: space-between;
 }
 
@@ -71,7 +76,7 @@
 }
 
 .team-social__list-link {
-  display: flex;
+  // display: flex;
   justify-content: center;
   align-items: center;
 
