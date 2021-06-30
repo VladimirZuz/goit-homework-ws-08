@@ -2,8 +2,13 @@
   display: none;
 }
 
-.auth-div-nav__item {
-  display: none;
+.auth-div {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .header-container {
@@ -50,6 +55,9 @@
     &.nav-div__link.current {
       color: var(--accent-color);
     }
+  }
+
+  .auth-div {
   }
   .auth-div-nav__item {
     display: flex;
