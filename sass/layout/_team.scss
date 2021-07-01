@@ -24,19 +24,32 @@
 }
 
 .team-menu-list {
-  // display: flex;
   text-align: center;
   margin-left: -30px;
   margin-top: -30px;
+
+  @media screen and (min-width: 768px) {
+    // display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .team-menu-item {
-  // flex-basis: calc((100% - 120px) / 4);
   margin-left: 30px;
   margin-top: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .team-sup-title {
@@ -57,10 +70,7 @@
 
 .team-social {
   display: flex;
-  // justify-content: space-between;
-  & :not(:last-child) {
-    margin-right: 10px;
-  }
+
   @media screen and (min-width: 480px) {
     justify-content: center;
     & :not(:last-child) {
@@ -70,6 +80,12 @@
 
   @media screen and (max-width: 479px) {
     justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    & :not(:last-child) {
+      margin-right: 10px;
+    }
   }
 }
 
