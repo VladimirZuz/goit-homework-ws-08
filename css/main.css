@@ -972,12 +972,17 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .client__client-list {
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .client__client-list-item {
     flex-basis: calc((100% - 30px) / 2);
     margin-left: 15px;
     margin-top: 30px;
-    width: 100%;
   }
 }
 
@@ -986,7 +991,12 @@ body {
     flex-basis: calc((100% - 45px) / 3);
     margin-left: 15px;
     margin-top: 30px;
-    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client__client-list-item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -1018,6 +1028,12 @@ body {
   .client__client-list-link {
     width: 210px;
     height: 92px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .client__client-list-link {
+    width: 100%;
   }
 }
 
