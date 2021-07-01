@@ -27,6 +27,9 @@
   font-size: 14px;
   line-height: 1.71;
   color: #757575;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
 }
 
 .feature-thumb {
