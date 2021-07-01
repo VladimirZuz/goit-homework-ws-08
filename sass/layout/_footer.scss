@@ -138,6 +138,10 @@
   }
 }
 
+.footer-social {
+  margin-bottom: 60px;
+}
+
 .footer-social-l__list-icon {
   width: 20px;
   height: 20px;
@@ -153,7 +157,6 @@
   color: #ffffff;
   margin-bottom: 20px;
   @media screen and (max-width: 767px) {
-    margin-top: 60px;
   }
 }
 
