@@ -114,14 +114,18 @@
 }
 
 .footer-social {
-  margin-left: 70px;
-  margin-right: 76px;
+  // margin-left: 70px;
+  // margin-right: 76px;
+  margin: auto;
 }
 
 .footer-social-l {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-social-l__list-link {
@@ -163,7 +167,7 @@
 }
 
 .footer-form {
-  display: flex;
+  // display: flex;
   justify-content: center;
 }
 
@@ -172,6 +176,10 @@
   line-height: 20px;
   color: rgba(255, 255, 255, 0.6);
   letter-spacing: 0.03em;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
