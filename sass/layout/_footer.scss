@@ -2,9 +2,15 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
   }
-  text-align: center;
+
+  // text-align: center;
   margin: 0 auto;
+  @media screen and (max-width: 479px) {
+    text-align: center;
+  }
 }
 
 .footer {
@@ -116,7 +122,7 @@
 .footer-social {
   // margin-left: 70px;
   // margin-right: 76px;
-  margin: auto;
+  // margin: auto;
 }
 
 .footer-social-l {

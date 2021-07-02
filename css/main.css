@@ -1072,7 +1072,6 @@ body {
 }
 
 .container-footer {
-  text-align: center;
   margin: 0 auto;
 }
 
@@ -1080,6 +1079,14 @@ body {
   .container-footer {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .container-footer {
+    text-align: center;
   }
 }
 
@@ -1188,10 +1195,6 @@ body {
   letter-spacing: 0.03em;
   color: #ffffff;
   text-transform: uppercase;
-}
-
-.footer-social {
-  margin: auto;
 }
 
 .footer-social-l {
