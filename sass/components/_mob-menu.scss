@@ -53,6 +53,10 @@
     &__container {
       position: relative;
       padding: 48px 40px 48px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
     }
 
     &__close-btn {
@@ -79,6 +83,9 @@
     }
   }
 }
+
+// .mob-menu__bottom {
+// }
 
 .mob-menu__link {
   font-style: normal;
@@ -132,7 +139,6 @@
 }
 
 .mob-menu__nav {
-  margin-bottom: 302px;
 }
 
 @media screen and (min-width: 768px) {

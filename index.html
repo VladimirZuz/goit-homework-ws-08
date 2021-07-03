@@ -83,30 +83,32 @@
             </li>
             <li class="mob-menu__item"><a href="" class="mob-menu__link">Контакты</a></li>
           </ul>
-          <ul class="mob-menu__contact list">
-            <li class="mob-menu__list">
-              <a class="mob-menu__tel-link link" href="tel:380961111111">+38 096 111 11 11</a>
-            </li>
-            <li class="mob-menu__list">
-              <a class="mob-menu__mail-link link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
-            </li>
-          </ul>
-          <ul class="mob-menu__social-list list">
-            <li class="mob-menu__social-item">
-              <a href="" class="mob-menu__social-link">Instagram</a>
-            </li>
-            <li class="mob-menu__social-item">
-              <a href="" class="mob-menu__social-link">Twitter</a>
-            </li>
-            <li class="mob-menu__social-item">
-              <a href="" class="mob-menu__social-link">Facebook</a>
-            </li>
-            <li class="mob-menu__social-item">
-              <a href="" class="mob-menu__social-link">LinkedIn</a>
-            </li>
-          </ul>
+          <div class="mob-menu__bottom">
+            <ul class="mob-menu__contact list">
+              <li class="mob-menu__list">
+                <a class="mob-menu__tel-link link" href="tel:380961111111">+38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu__list">
+                <a class="mob-menu__mail-link link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="mob-menu__social-list list">
+              <li class="mob-menu__social-item">
+                <a href="" class="mob-menu__social-link">Instagram</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a href="" class="mob-menu__social-link">Twitter</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a href="" class="mob-menu__social-link">Facebook</a>
+              </li>
+              <li class="mob-menu__social-item">
+                <a href="" class="mob-menu__social-link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -186,13 +188,22 @@
           <h2 class="job__job-title">Чем мы занимаемся</h2>
           <ul class="job__menu-list list">
             <li class="job__menu-img-item">
-              <img
-                class="job__menu-img-list"
-                src="./images/img1.jpg"
-                alt="photo 1"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="../images/desktop/box.webp 1x, ../images/desktop/box@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  srcset="../images/desktop/box1.jpg 1x, ../images/desktop/box@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  class="job__menu-img-list"
+                  src="./images/img1.jpg"
+                  alt="photo 1"
+                  width="370"
+                  height="294"
+                />
+              </picture>
+
               <div class="job__div">
                 <p class="job__photo-text">Декстопные приложения</p>
               </div>
@@ -233,13 +244,33 @@
           <h2 class="team-title">Наша команда</h2>
           <ul class="team-menu-list list">
             <li class="team-menu-item">
-              <img
-                class="team-menu-img"
-                src="./images/productdesigners.jpg"
-                alt="ProductDesigner"
-                width="270"
-                height="260"
-              />
+              <picture class="picture">
+                <source
+                  srcset="../images/desktop/img.webp 1x, ../images/desktop/img@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  srcset="../images/desktop/img.jpg 1x, ../images/desktop/img@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  srcset="../images/tablet/img.webp 1x, ../images/tablet/img@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="../images/tablet/img.jpg 1x, ../images/tablet/img@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  srcset="../images/mobile/img.webp 1x, ../images/mobile/img@2x.webp 2x"
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                  srcset="../images/mobile/img.jpg 1x, ../images/mobile/img@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-menu-img"
+                  src="./images/productdesigners.jpg"
+                  alt="ProductDesigner"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team-card-content">
                 <h3 class="team-sup-title">Игорь Демьяненко</h3>
                 <p class="team-discription">Product Designer</p>
@@ -277,13 +308,33 @@
             </li>
 
             <li class="team-menu-item">
-              <img
-                class="team-menu-img"
-                src="./images/frontendevelopers.jpg"
-                alt="Frontend Developer"
-                width="270"
-                height="260"
-              />
+              <picture class="picture">
+                <source
+                  srcset="../images/desktop/img2.webp 1x, ../images/desktop/img2@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  srcset="../images/desktop/img2.jpg 1x, ../images/desktop/img2@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  srcset="../images/tablet/img2.webp 1x, ../images/tablet/img2@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="../images/tablet/img2.jpg 1x, ../images/tablet/img2@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  srcset="../images/mobile/img2.webp 1x, ../images/mobile/img2@2x.webp 2x"
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                  srcset="../images/mobile/img2.jpg 1x, ../images/mobile/img2@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-menu-img"
+                  src="./images/frontendevelopers.jpg"
+                  alt="Frontend Developer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team-card-content">
                 <h3 class="team-sup-title">Ольга Репина</h3>
                 <p class="team-discription">Frontend Developer</p>
@@ -321,13 +372,33 @@
             </li>
 
             <li class="team-menu-item">
-              <img
-                class="team-menu-img"
-                src="./images/marketings.jpg"
-                alt="Marketing"
-                width="270"
-                height="260"
-              />
+              <picture class="picture">
+                <source
+                  srcset="../images/desktop/img3.webp 1x, ../images/desktop/img3@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  srcset="../images/desktop/img3.jpg 1x, ../images/desktop/img3@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  srcset="../images/tablet/img3.webp 1x, ../images/tablet/img3@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="../images/tablet/img3.jpg 1x, ../images/tablet/img3@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  srcset="../images/mobile/img3.webp 1x, ../images/mobile/img3@2x.webp 2x"
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                  srcset="../images/mobile/img3.jpg 1x, ../images/mobile/img3@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-menu-img"
+                  src="./images/marketings.jpg"
+                  alt="Marketing"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team-card-content">
                 <h3 class="team-sup-title">Николай Тарасов</h3>
                 <p class="team-discription">Marketing</p>
@@ -365,13 +436,33 @@
             </li>
 
             <li class="team-menu-item">
-              <img
-                class="team-menu-img"
-                src="./images/uldesigners.jpg"
-                alt="UI Designer"
-                width="270"
-                height="260"
-              />
+              <picture class="picture">
+                <source
+                  srcset="../images/desktop/img4.webp 1x, ../images/desktop/img4@2x.webp 2x"
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                  srcset="../images/desktop/img4.jpg 1x, ../images/desktop/img4@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                  srcset="../images/tablet/img4.webp 1x, ../images/tablet/img4@2x.webp 2x"
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                  srcset="../images/tablet/img4.jpg 1x, ../images/tablet/img4@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                  srcset="../images/mobile/img4.webp 1x, ../images/mobile/img4@2x.webp 2x"
+                  media="(min-width: 480px)"
+                  type="image/webp"
+                  srcset="../images/mobile/img4.jpg 1x, ../images/mobile/img4@2x.jpg 2x"
+                  media="(min-width: 480px)"
+                />
+                <img
+                  class="team-menu-img"
+                  src="./images/uldesigners.jpg"
+                  alt="UI Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
+
               <div class="team-card-content">
                 <h3 class="team-sup-title">Михаил Ермаков</h3>
                 <p class="team-discription">UI Designer</p>

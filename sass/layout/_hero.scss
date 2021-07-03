@@ -6,27 +6,27 @@
   margin: 0 auto;
   background-color: #2f303a;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/mobil/m-imghero.jpg');
+    url('../images/mobile/imghero.jpg');
   background-size: cover;
 }
 
 @media (min-resolution: 2dppx) {
   .hero-menu {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/mobil/m-imghero@2x.jpg');
+      url('../images/mobile/imghero@2x.jpg');
   }
 }
 
 @media (min-width: 468px) {
   .hero-menu {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/tablet/t-imghero.jpg');
+      url('../images/tablet/imghero.jpg');
   }
 
   @media (min-resolution: 2dppx) {
     .hero-menu {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/tablet/t-imghero@2x.jpg');
+        url('../images/tablet/imghero@2x.jpg');
     }
   }
 }
@@ -34,13 +34,13 @@
 @media (min-width: 768px) {
   .hero-menu {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/dekstop/d-imghero.jpg');
+      url('../images/desktop/imghero.jpg');
   }
 
   @media (min-resolution: 2dppx) {
     .hero-menu {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/dekstop/d-imghero@2x.jpg');
+        url('../images/desktop/imghero@2x.jpg');
     }
   }
 }

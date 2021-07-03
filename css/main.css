@@ -127,6 +127,10 @@ body {
   .mob-menu__container {
     position: relative;
     padding: 48px 40px 48px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
   }
   .mob-menu__close-btn {
     position: absolute;
@@ -196,10 +200,6 @@ body {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
-}
-
-.mob-menu__nav {
-  margin-bottom: 302px;
 }
 
 @media screen and (min-width: 768px) {
@@ -643,37 +643,37 @@ body {
   text-align: center;
   margin: 0 auto;
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobil/m-imghero.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/imghero.jpg");
   background-size: cover;
 }
 
 @media (min-resolution: 2dppx) {
   .hero-menu {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobil/m-imghero@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/imghero@2x.jpg");
   }
 }
 
 @media (min-width: 468px) {
   .hero-menu {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/t-imghero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/imghero.jpg");
   }
 }
 
 @media (min-width: 468px) and (min-resolution: 2dppx) {
   .hero-menu {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/t-imghero@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/imghero@2x.jpg");
   }
 }
 
 @media (min-width: 768px) {
   .hero-menu {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/dekstop/d-imghero.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/imghero.jpg");
   }
 }
 
 @media (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-menu {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/dekstop/d-imghero@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/desktop/imghero@2x.jpg");
   }
 }
 
@@ -897,7 +897,7 @@ body {
 
 @media screen and (min-width: 1200px) {
   .team-menu-item {
-    flex-basis: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 
