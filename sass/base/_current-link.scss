@@ -1,0 +1,38 @@
+// .nav-div__link.current::after {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   bottom: 1px;
+//   display: block;
+//   width: 100%;
+//   height: 4px;
+//   border-radius: 2px;
+//   background-color: var(--accent-color);
+// }
+
+// a.current {
+//   color: var(--accent-color);
+// }
+
+a.current {
+  color: var(--accent-color);
+  text-decoration: none;
+  position: relative;
+}
+
+a.current::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-color);
+}
+
+.link-current {
+  color: var(--accent-color);
+  text-decoration: none;
+}
