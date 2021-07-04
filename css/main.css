@@ -1157,7 +1157,7 @@ a.current::after {
 @media screen and (min-width: 768px) {
   .logo {
     display: block;
-    margin-left: 100px;
+    margin-left: 115px;
   }
 }
 
@@ -1176,14 +1176,6 @@ a.current::after {
 
 .block-adress {
   width: 232px;
-  text-align: center;
-  margin: 20px auto;
-}
-
-@media screen and (min-width: 768px) {
-  .block-adress {
-    margin-left: 76px;
-  }
 }
 
 .footer-logo-color {
@@ -1198,6 +1190,12 @@ a.current::after {
 @media screen and (max-width: 1199px) {
   .address-font__adres-list {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .address-font__adres-list {
+    text-align: center;
   }
 }
 

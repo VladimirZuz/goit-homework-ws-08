@@ -37,8 +37,9 @@
 .logo {
   @media screen and (min-width: 768px) {
     display: block;
-    margin-left: 100px;
+    margin-left: 115px;
   }
+
   @media screen and (max-width: 1199px) {
     font-size: 24px;
   }
@@ -63,10 +64,10 @@
 
 .block-adress {
   width: 232px;
-  text-align: center;
-  margin: 20px auto;
+  // text-align: center;
+  // margin: 20px auto;
   @media screen and (min-width: 768px) {
-    margin-left: 76px;
+    // margin-left: 76px;
   }
 }
 
@@ -79,6 +80,9 @@
   margin-top: 20px;
   @media screen and (max-width: 1199px) {
     margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
   }
 }
 
