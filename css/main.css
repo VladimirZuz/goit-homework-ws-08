@@ -1130,6 +1130,18 @@ a.current::after {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-address {
+    justify-content: center;
+  }
+}
+
 .logo {
   color: #2196f3;
   font-weight: bold;
@@ -1142,6 +1154,13 @@ a.current::after {
   color: #2196f3;
 }
 
+@media screen and (min-width: 768px) {
+  .logo {
+    display: block;
+    margin-left: 100px;
+  }
+}
+
 @media screen and (max-width: 1199px) {
   .logo {
     font-size: 24px;
@@ -1152,6 +1171,18 @@ a.current::after {
   .logo {
     display: flex;
     font-size: 28px;
+  }
+}
+
+.block-adress {
+  width: 232px;
+  text-align: center;
+  margin: 20px auto;
+}
+
+@media screen and (min-width: 768px) {
+  .block-adress {
+    margin-left: 76px;
   }
 }
 
@@ -1230,6 +1261,21 @@ a.current::after {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-social__join-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer-social {
+    position: absolute;
+    top: 65px;
+    right: 119px;
+  }
+}
+
 .footer-social-l {
   display: flex;
   justify-content: center;
@@ -1280,7 +1326,8 @@ a.current::after {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form {
-    width: 450px;
+    max-width: 450px;
+    height: 50px;
   }
 }
 
