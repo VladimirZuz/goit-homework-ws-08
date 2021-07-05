@@ -32,7 +32,9 @@ a.current::after {
   background-color: var(--accent-color);
 }
 
-.link-current {
-  color: var(--accent-color);
-  text-decoration: none;
+.mob-menu__link {
+  &.link-current {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
 }

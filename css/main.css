@@ -130,7 +130,7 @@ a.current::after {
   background-color: var(--accent-color);
 }
 
-.link-current {
+.mob-menu__link.link-current {
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -205,10 +205,7 @@ a.current::after {
 
 .mob-menu__social-item {
   margin-top: 64px;
-}
-
-.mob-menu__social-item:not(:last-child) {
-  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .mob-menu__social-item::after {
@@ -217,6 +214,16 @@ a.current::after {
   width: 1px;
   height: 22px;
   float: right;
+  margin-left: 10px;
+}
+
+.mob-menu__social-item:first-child {
+  margin-left: 0px;
+}
+
+.mob-menu__social-item:last-child::after {
+  margin-right: 0px;
+  width: 0px;
 }
 
 .mob-menu__list {
@@ -479,7 +486,7 @@ a.current::after {
 
 .mob-menu__social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
 }
 
 @media screen and (min-width: 768px) {
@@ -1128,7 +1135,8 @@ a.current::after {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-footer__box {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
   }
 }
 
@@ -1144,12 +1152,6 @@ a.current::after {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-address {
-    margin-left: 76px;
-  }
-}
-
 .logo {
   color: #2196f3;
   font-weight: bold;
@@ -1162,7 +1164,13 @@ a.current::after {
   color: #2196f3;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
+  .logo {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
     font-size: 24px;
   }
@@ -1171,11 +1179,18 @@ a.current::after {
 @media screen and (min-width: 1200px) {
   .logo {
     display: flex;
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
+  .block-adress {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .block-adress {
     margin-top: 20px;
   }
@@ -1264,12 +1279,6 @@ a.current::after {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .footer-social {
-    margin-left: 105px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-left: 70px;
@@ -1336,7 +1345,7 @@ a.current::after {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-form {
     max-width: 450px;
-    height: 50px;
+    margin: 0 auto;
   }
 }
 
@@ -1412,8 +1421,7 @@ a.current::after {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container-footer__form-title {
-    justify-content: center;
-    display: flex;
+    width: 100%;
     text-align: center;
   }
 }

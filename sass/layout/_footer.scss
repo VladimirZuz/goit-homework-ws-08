@@ -25,7 +25,8 @@
 .container-footer__box {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -36,21 +37,21 @@
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 76px;
-  }
 }
 
 .logo {
   @media screen and (max-width: 767px) {
-  }
-
-  @media screen and (max-width: 1199px) {
     font-size: 24px;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 24px;
+  }
+
   @media screen and (min-width: 1200px) {
     display: flex;
-    font-size: 28px;
+    font-size: 26px;
+    margin-bottom: 20px;
   }
 
   color: #2196f3;
@@ -69,6 +70,9 @@
 
 .block-adress {
   @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 768px) {
     margin-top: 20px;
   }
 }
@@ -155,12 +159,7 @@
   @media screen and (max-width: 767px) {
     text-align: center;
   }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 105px;
-  }
 
-  // margin-right: 76px;
-  // margin: auto;
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
@@ -220,11 +219,10 @@
 }
 
 .footer-form {
-  // display: flex;
   justify-content: center;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 450px;
-    height: 50px;
+    margin: 0 auto;
   }
 }
 
@@ -297,8 +295,7 @@
     text-align: center;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    justify-content: center;
-    display: flex;
+    width: 100%;
     text-align: center;
   }
 }
