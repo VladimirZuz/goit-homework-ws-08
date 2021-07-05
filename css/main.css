@@ -1593,6 +1593,9 @@ a.current::after {
   padding: 20px 20px;
   border: 1px solid #eeeeee;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project__portfolio-title {
