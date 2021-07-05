@@ -1132,8 +1132,9 @@ a.current::after {
   }
 }
 
-@media screen and (max-width: 1199px) {
-  .footer-address {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container-footer__box {
+    display: flex;
     justify-content: center;
   }
 }
@@ -1148,12 +1149,6 @@ a.current::after {
   line-height: 31px;
   letter-spacing: 0.03em;
   color: #2196f3;
-}
-
-@media screen and (min-width: 768px) {
-  .logo {
-    display: block;
-  }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1171,11 +1166,6 @@ a.current::after {
 
 .footer-logo-color {
   color: #ffffff;
-}
-
-.address-font__adres-list {
-  flex-direction: column;
-  margin-top: 20px;
 }
 
 @media screen and (max-width: 1199px) {
@@ -1462,6 +1452,12 @@ a.current::after {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .project__p-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .project__p-item {
     flex-basis: calc(100% / 2 - 30px);
@@ -1508,6 +1504,12 @@ a.current::after {
   outline: none;
 }
 
+.project__p-item-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .project__p-item-link:hover, .project__p-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition-property: box-shadow;
@@ -1540,6 +1542,7 @@ a.current::after {
   border: 1px solid #eeeeee;
   padding: 20px 20px;
   border: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .project__portfolio-title {

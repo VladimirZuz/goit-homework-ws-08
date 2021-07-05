@@ -28,15 +28,23 @@
   }
 }
 
+.container-footer__box {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .footer-address {
   @media screen and (max-width: 1199px) {
-    justify-content: center;
+    // text-align: center;
+    // margin-right: 165px;
   }
 }
 
 .logo {
   @media screen and (min-width: 768px) {
-    display: block;
+    // display: block;
     // margin-left: 100px;
   }
 
@@ -78,8 +86,8 @@
 }
 
 .address-font__adres-list {
-  flex-direction: column;
-  margin-top: 20px;
+  // flex-direction: column;
+  // margin-top: 20px;
   @media screen and (min-width: 768px) {
     // text-align: center;
     // margin-left: 61px;
