@@ -205,7 +205,6 @@ a.current::after {
 }
 
 .mob-menu__social-item {
-  margin-top: 64px;
   margin-left: 10px;
 }
 
@@ -507,6 +506,7 @@ a.current::after {
 .mob-menu__social-list {
   display: flex;
   justify-content: start;
+  margin-top: 64px;
 }
 
 @media screen and (min-width: 768px) {
