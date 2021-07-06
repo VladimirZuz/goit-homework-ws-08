@@ -1599,16 +1599,8 @@ a.current::after {
 
 .project__menu-img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-}
-
-@media screen and (min-width: 1200px) {
-  .project__menu-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
 }
 
 .project__card-content {
