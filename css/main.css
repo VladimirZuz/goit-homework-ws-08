@@ -175,6 +175,11 @@ a.current::after {
     top: 10px;
     right: 0;
   }
+  .mob-menu__close-btn:hover, .mob-menu__close-btn:focus {
+    fill: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+  }
   .mob-menu.is-open {
     opacity: 1;
     visibility: visible;
@@ -500,6 +505,11 @@ a.current::after {
     width: 40px;
     height: 40px;
     fill: #212121;
+  }
+  .page-header__mob-menu-icon:hover, .page-header__mob-menu-icon:focus {
+    fill: var(--accent-color);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
   }
 }
 
