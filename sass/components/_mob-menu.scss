@@ -46,6 +46,7 @@
 @media screen and (max-width: 767px) {
   .mob-menu {
     position: fixed;
+    z-index: 100;
     top: 0%;
     left: 0%;
     width: 100vw;
@@ -128,9 +129,11 @@
   float: right;
   margin-left: 10px;
 }
+
 .mob-menu__social-item:first-child {
   margin-left: 0px;
 }
+
 .mob-menu__social-item:last-child::after {
   margin-right: 0px;
   width: 0px;

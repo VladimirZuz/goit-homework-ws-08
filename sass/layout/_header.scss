@@ -53,9 +53,6 @@
   .nav-div__nav {
     display: flex;
     align-items: center;
-    // &.nav-div__link.current {
-    //   color: var(--accent-color);
-    // }
   }
 
   .auth-div-nav__item {
@@ -101,8 +98,8 @@
     flex-direction: row;
   }
   .header-container {
-    height: 80px;
-    width: 75%;
+    // height: 80px;
+    // width: 75%;
   }
   .nav-div__nav {
     display: flex;
