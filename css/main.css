@@ -210,7 +210,7 @@ a.current::after {
 }
 
 .mob-menu__social-item {
-  margin-left: 10px;
+  padding-left: 10px;
 }
 
 .mob-menu__social-item::after {
@@ -241,6 +241,12 @@ a.current::after {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 377px) {
+  .mob-menu__tel-link {
+    font-size: 27px;
+  }
 }
 
 .mob-menu__mail-link {
@@ -296,6 +302,17 @@ a.current::after {
   font-size: 14px;
   line-height: 1.71;
   justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .modal-form-checkbox-policy {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    line-height: 1.71;
+    justify-content: center;
+  }
 }
 
 .modal-form-policy-link {
