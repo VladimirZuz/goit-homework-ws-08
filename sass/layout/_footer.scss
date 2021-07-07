@@ -23,10 +23,14 @@
 }
 
 .container-footer__box {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -34,6 +38,9 @@
 }
 
 .footer-address {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
@@ -79,12 +86,6 @@
 
 .footer-logo-color {
   color: #ffffff;
-}
-
-.address-font__adres-list {
-  @media screen and (max-width: 1199px) {
-    margin-bottom: 60px;
-  }
 }
 
 .address-font__adres-item {
@@ -157,6 +158,9 @@
 
 .footer-social {
   @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
 
@@ -170,7 +174,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 60px;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;

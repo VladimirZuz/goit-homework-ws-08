@@ -22,6 +22,7 @@
 // CСОКРЫТИЕ ИКОНКИ БУРГЕР
 @media screen and (max-width: 767px) {
   .page-header {
+    border-bottom: 1px solid #ececec;
     &__mob-menu-btm {
       line-height: 0;
       background-color: transparent;
@@ -41,6 +42,12 @@
         outline: none;
       }
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .page-header {
+    border-bottom: 1px solid #ececec;
   }
 }
 
