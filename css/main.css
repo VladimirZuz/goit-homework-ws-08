@@ -1527,7 +1527,7 @@ a.current::after {
 }
 
 @media screen and (max-width: 767px) {
-  .filter__button-li {
+  .filter__button-li:not(:nth-last-of-type(-n + 2)) {
     margin-bottom: 15px;
   }
 }
